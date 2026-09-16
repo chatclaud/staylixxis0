@@ -1,0 +1,21 @@
+CHATCLAUD FIX — Deploy
+
+1. Upload this ZIP contents to Render root
+2. Start: npm start
+3. Environment (required):
+   GROQ_KEY=...
+   MISTRAL_API_KEY=...
+   HF_KEY=...          # or HF_TOKEN
+   HF_KEY2=...         # second HF key
+   NOVA_URL=https://nova-brawser.onrender.com
+   NOVA_AIP_TOKEN=...
+4. Check /api/health → hasGroq, hasHf, hasNova = true
+
+Fixed in this build:
+- HF_KEY + HF_KEY2 for vision/transcribe
+- Thinking: gray English status (no cube)
+  Thinking… / I'm looking at the website… / etc.
+- Sources: book SVG only (no "Источники" text)
+- Nova primary search on non-trivial questions
+- Min AI response ~9 seconds
+- Design unchanged (black glass)
