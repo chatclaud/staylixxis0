@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>staylaxxis</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+       background:radial-gradient(circle at 20% 0%,#1b1035,#05010d 60%);color:#fff;min-height:100vh}
+  .wrap{max-width:1000px;margin:0 auto;padding:40px 20px 80px}
+  .hero{text-align:center;padding:40px 0 50px}
+  .logo{width:96px;height:96px;border-radius:26px;margin:0 auto 22px;
+        background:linear-gradient(135deg,#8b5cf6,#00d4ff);box-shadow:0 0 60px rgba(139,92,246,.6)}
+  .hero h1{font-size:44px;font-weight:900;letter-spacing:.5px}
+  .hero .tag{color:#9aa0ff;margin-top:8px;font-size:16px}
+  .pill{display:inline-block;margin-top:18px;padding:6px 18px;
+        background:rgba(139,92,246,.18);border:1px solid rgba(139,92,246,.4);
+        color:#c4b5fd;border-radius:30px;font-size:13px;font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:24px}
+  .card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
+        border-radius:22px;padding:26px;backdrop-filter:blur(14px);
+        transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(0,0,0,.5)}
+  .app-icon{width:64px;height:64px;border-radius:16px;margin-bottom:16px}
+  .card h2{font-size:22px;font-weight:800}
+  .card p{color:#9aa;font-size:14px;margin:8px 0 20px;line-height:1.5}
+  .btn{margin-top:auto;display:block;text-align:center;padding:14px;border-radius:50px;
+       font-weight:700;font-size:15px;text-decoration:none;color:#fff;letter-spacing:.3px;transition:transform .15s}
+  .btn:hover{transform:scale(1.03)}
+  .c1 .btn{background:linear-gradient(135deg,#ef4444,#f97316)}
+  .c2 .btn{background:linear-gradient(135deg,#3b82f6,#00d4ff)}
+  .c3 .btn{background:linear-gradient(135deg,#10b981,#22d3ee)}
+  .foot{text-align:center;margin-top:60px;color:#667;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="logo"></div>
+    <h1>staylaxxis</h1>
+    <p class="tag">Установочный центр - Anti-Revoke</p>
+    <span class="pill">v0 - 2026</span>
+  </div>
+  <div class="grid">
+    <div class="card c1">
+      <div class="app-icon" style="background:linear-gradient(135deg,#ff5f6d,#ffc371)"></div>
+      <h2>Scarlet</h2>
+      <p>Установщик IPA-приложений. Лёгкий и быстрый доступ к загрузкам.</p>
+      <a class="btn" href="https://usescarlet.com" target="_blank">Скачать Scarlet</a>
+    </div>
+    <div class="card c2">
+      <div class="app-icon" style="background:linear-gradient(135deg,#38bdf8,#818cf8)"></div>
+      <h2>ESign</h2>
+      <p>Подпись и установка приложений на устройстве без компьютера.</p>
+      <a class="btn" href="https://esign.app" target="_blank">Скачать ESign</a>
+    </div>
+    <div class="card c3">
+      <div class="app-icon" style="background:linear-gradient(135deg,#34d399,#2dd4bf)"></div>
+      <h2>TrollStore</h2>
+      <p>Постоянная установка приложений без переподписи.</p>
+      <a class="btn" href="https://github.com/opa334/TrollStore" target="_blank">Скачать TrollStore</a>
+    </div>
+  </div>
+  <div class="foot">Профиль anti-revoke защищает установленные приложения от отзыва.</div>
+</div>
+</body>
+</html>
