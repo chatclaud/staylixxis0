@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadDisplayName</key>
+	<string>staylaxxis 0</string>
+	<key>PayloadDescription</key>
+	<string>staylaxxis - Anti-Revoke DNS protection</string>
+	<key>PayloadIdentifier</key>
+	<string>com.staylaxxis.root</string>
+	<key>PayloadOrganization</key>
+	<string>staylaxxis</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>B4A9F1C2-3D5E-4A6B-8C7D-9E0F1A2B3C4D</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadContent</key>
+	<array>
+
+		<!-- DNS Anti-Revoke payload -->
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>staylaxxis Anti-Revoke DNS</string>
+			<key>PayloadDescription</key>
+			<string>Routes Apple certificate domains through Cloudflare DoH</string>
+			<key>PayloadIdentifier</key>
+			<string>com.staylaxxis.dns</string>
+			<key>PayloadOrganization</key>
+			<string>staylaxxis</string>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadUUID</key>
+			<string>C5B0A2D3-4E6F-5B7C-9D8E-0F1A2B3C4D5E</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerURL</key>
+				<string>https://vevrl9air2.cloudflare-gateway.com/dns-query</string>
+				<key>SupplementalMatchDomains</key>
+				<array>
+					<string>ocsp.apple.com</string>
+					<string>ocsp2.apple.com</string>
+					<string>ocspx.apple.com</string>
+					<string>mesu.apple.com</string>
+					<string>gdmf.apple.com</string>
+					<string>valid.apple.com</string>
+					<string>crl.apple.com</string>
+					<string>certs.apple.com</string>
+					<string>appattest.apple.com</string>
+					<string>vpp.itunes.apple.com</string>
+					<string>guzzoni-apple-com.v.aaplimg.com</string>
+					<string>axm-app.apple.com</string>
+					<string>comm-cohort.ess.apple.com</string>
+					<string>comm-main.ess.apple.com</string>
+					<string>applejr.net</string>
+					<string>configuration.apple.com</string>
+					<string>ppq.apple.com</string>
+					<string>gs-loc.apple.com</string>
+					<string>iphone-services.apple.com</string>
+					<string>apps.apple.com</string>
+					<string>itunes.apple.com</string>
+				</array>
+			</dict>
+			<key>OnDemandRules</key>
+			<array>
+				<dict>
+					<key>Action</key>
+					<string>Connect</string>
+				</dict>
+			</array>
+		</dict>
+
+		<!-- Scarlet WebClip payload -->
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Scarlet Installer</string>
+			<key>PayloadDescription</key>
+			<string>Shortcut to Scarlet download</string>
+			<key>PayloadIdentifier</key>
+			<string>com.staylaxxis.scarlet</string>
+			<key>PayloadOrganization</key>
+			<string>staylaxxis</string>
+			<key>PayloadType</key>
+			<string>com.apple.webClip.managed</string>
+			<key>PayloadUUID</key>
+			<string>D6C1B3E4-5F7A-6C8D-0E9F-1A2B3C4D5E6F</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>FullScreen</key>
+			<true/>
+			<key>IsRemovable</key>
+			<true/>
+			<key>Label</key>
+			<string>Scarlet</string>
+			<key>URL</key>
+			<string>https://usescarlet.com</string>
+		</dict>
+
+	</array>
+</dict>
+</plist>
